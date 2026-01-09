@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Computer Science Department</title>
+    <style>
+        /* BODY & BACKGROUND */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url("work2.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #150f0f;
+            overflow-x: hidden;
+        }
+
+        /* CENTERED CONTAINER */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        /* BOX FOR CONTENT */
+        .box {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 15px;
+            width: 70%;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        /* HEADINGS */
+        h2 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            font-weight: 900; /* extra bold */
+            text-shadow: 2px 2px 5px rgb(15, 9, 9);
+            margin-bottom: 25px;
+        }
+
+        /* PARAGRAPHS AND STRONG TEXT */
+        .box p, .box strong, .box label {
+            font-weight: 700; /* bold text */
+            color: #fff; /* make sure text is visible */
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* BACK BUTTON */
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border: 1px solid white;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: 700; /* bold button text */
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .box {
+                width: 90%;
+                padding: 30px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .box p, .box strong, .box label {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h2>Contact Us</h2>
+
+            <p>
+                <strong>Department of Computer Science</strong><br>
+                UET University, Lahore<br>
+                GT Road, Lahore, Pakistan
+            </p>
+
+            <p>
+                <strong>Phone:</strong> 03317897632<br>
+                <strong>Email:</strong> csdept@uetuniversity.edu
+            </p>
+
+            <p>
+                <strong>Office Hours:</strong> Monday – Friday, 9:00 AM – 5:00 PM
+            </p>
+
+            <a href="project.html">Go Back</a>
+        </div>
+    </div>
+
+</body>
+</html>

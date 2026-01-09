@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Text Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            /* remove default margin */
+            background-image: url("work2.jpg");
+            background-size: cover;
+            background-position: center;
+            color: rgb(21, 17, 17);
+
+
+
+            position: relative;
+            overflow: hidden;
+        }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("work2.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);          /* 👈 blur strength */
+    z-index: -1;                /* stays behind content */
+    transform: scale(1.1);      /* avoids white edges */
+}
+
+
+
+        .layout {
+            display: flex;
+            /* sidebar + content side by side */
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* semi-transparent black */
+            padding: 20px;
+            height: 100vh;
+            /* full height */
+            color: white;
+        }
+
+        .sidebar h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(231, 236, 211, 0.4);
+            border-radius: 8px;
+            flex: 1;
+            /* take remaining space */
+        }
+
+        h1 {
+            text-align: center;
+         letter-spacing: 2px;
+
+    /* 3D EFFECT */
+    color: #1a1a1a;
+    text-shadow:
+        1px 1px 0 #ccc,
+        2px 2px 0 #aaa,
+        3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+        p {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            border-left: 4px solid rgba(187, 196, 111, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Options</h3>
+            <a href="home.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <h1>𝘾𝙊𝙈𝙋𝙐𝙏𝙀𝙍 𝙎𝘾𝙄𝙀𝙉𝘾𝙀</h1>
+            <p><strong>We cultivate students across diverse disciplines, empowering them to become accomplished
+                    professionals.</strong></p>
+
+            <div class="highlight">
+                <p>Our departments offer comprehensive programs designed to equip students with the skills and knowledge
+                    needed for their future careers.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

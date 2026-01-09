@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Computer Science Department</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url("work2.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* overlay to darken the background for readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        .box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 15px;
+            width: 70%;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            text-shadow: 3px 3px 8px black;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px 15px 0 15px;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border: 2px solid white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>WELCOME TO</h1>
+            <h2>COMPUTER SCIENCE DEPARTMENT</h2>
+            <p>
+                Explore the world of computing, programming, and innovation. Our department focuses on developing problem-solving skills, practical projects, and hands-on experience with modern technology. Learn, create, and innovate with us!
+            </p>
+            <p> Dive in to the world of programming. Our department offers a comprehensive curriculum designed to equip students with essential skills in software development, data structures, algorithms, and modern programming languages.
+                Our department is dedicated to fostering a collaborative learning environment where students can thrive and excel in their computer science journey.
+                our department has made many significant contributions to research and development in various fields of computer science, including artificial intelligence, cybersecurity, and data science.
+            </p>
+            <a href="courses.html" class="btn">About CS</a>
+            <a href="project.html" class="btn">back</a>
+        </div>
+    </div>
+
+</body>
+</html>

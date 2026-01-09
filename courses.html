@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <style>
+        /* BODY & BACKGROUND */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url("work2.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #150f0f;
+            overflow-x: hidden;
+        }
+
+        /* CENTERED BOX */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        .box {
+            background: rgba(195, 170, 170, 0.5);
+            padding: 40px;
+            border-radius: 15px;
+            width: 70%;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+        }
+
+        /* HEADINGS */
+        h2 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px black;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* PARAGRAPHS */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        /* COURSE LIST */
+        #cs-courses ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cs-courses li {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 12px 0;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        #cs-courses li:hover {
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+        }
+
+        /* BACK BUTTON */
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border: 1px solid white;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .box {
+                width: 90%;
+                padding: 30px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            p, #cs-courses li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <!-- ABOUT CS SECTION -->
+            <section id="about-cs">
+                <h2>About the Computer Science Department</h2>
+                <p>
+                    The Computer Science Department is committed to developing skilled and innovative professionals in technology. 
+                    Students gain a strong foundation in <strong>programming, algorithms, data structures, computer systems, and networking</strong>, 
+                    while exploring advanced areas like <strong>Artificial Intelligence, Data Science, Cybersecurity, and Robotics</strong>.
+                </p>
+                <p>
+                    Through <strong>hands-on labs, projects, and industry training</strong>, students are prepared for higher studies and 
+                    dynamic careers in the tech industry. We focus on <strong>creativity, problem-solving, and innovation</strong> to 
+                    empower students to design and build solutions for the digital world.
+                </p>
+            </section>
+
+            <!-- COURSES OFFERED SECTION -->
+            <section id="cs-courses">
+                <h2>Courses Offered</h2>
+                <ul>
+                    <li><strong>Programming & Software Development</strong></li>
+                    <li><strong>Computer Systems & Hardware</strong></li>
+                    <li><strong>Data & Artificial Intelligence</strong></li>
+                    <li><strong>Theory & Foundations</strong></li>
+                    <li><strong>Specialized & Emerging Areas</strong></li>
+                    <li><strong>Practical & Project-based Courses</strong></li>
+                </ul>
+            </section>
+
+            <!-- BACK BUTTON -->
+            <a href="project.html">Go Back</a>
+        </div>
+    </div>
+
+</body>
+</html>
